@@ -33,8 +33,8 @@ function win(user,computer){
     const smallCompWord = "Bot".fontsize(3).sup();
     result_div.innerHTML =convertToWord(user)+smallUserWord+" beats "+convertToWord(computer)+smallCompWord+" You Win!🔥";
     // move_p.innerHTML = `You
-    //     <img src="../images/${convertToWord(user)}-emoji.png" class='move-icon'>
-    //     <img src="../images/${convertToWord(computer)}-emoji.png" class='move-icon'> 
+    //     <img src="images/${convertToWord(user)}-emoji.png" class='move-icon'>
+    //     <img src="images/${convertToWord(computer)}-emoji.png" class='move-icon'> 
     //     Bot`;
     showMoves(convertToWord(user),convertToWord(computer));
     document.getElementById(user).classList.add('green-glow');
@@ -63,8 +63,8 @@ function draw(user,computer){
 
 function showMoves(user,computer){
     move_p.innerHTML = `You 
-    <img src="../images/${user}-emoji.png" class='move-icon'>
-    <img src="../images/${computer}-emoji.png" class='move-icon'> 
+    <img src="images/${user}-emoji.png" class='move-icon'>
+    <img src="images/${computer}-emoji.png" class='move-icon'> 
     Bot`;
 }
 
